@@ -37,7 +37,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-bold">
-            CR
+            CLIFFORD RODRIGUEZ
           </Link>
 
           {/* Desktop Navigation */}

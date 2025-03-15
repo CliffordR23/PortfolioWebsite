@@ -18,7 +18,7 @@ export function HeroSection() {
           Clifford Rodriguez
         </h1>
         <h2 className="text-xl md:text-2xl text-blue-200 mb-8">
-          Computer Science Student & Network Security Specialist
+          Computer Science Student with focus in Networks, Security, and Full Stack WebDev
         </h2>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <Button asChild variant="outline" size="lg" className="border-blue-300 text-blue-300 hover:bg-blue-900/20">
@@ -34,7 +34,7 @@ export function HeroSection() {
         </div>
         <div className="flex justify-center gap-6 mt-8">
           <motion.a
-            href="https://github.com/Clifford"
+            href="https://github.com/CliffordR23"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -45,7 +45,7 @@ export function HeroSection() {
             <span className="sr-only">GitHub</span>
           </motion.a>
           <motion.a
-            href="https://linkedin.com/in/Clifford"
+            href="https://www.linkedin.com/in/clifford-rodriguez-8357b3214/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -56,7 +56,7 @@ export function HeroSection() {
             <span className="sr-only">LinkedIn</span>
           </motion.a>
           <motion.a
-            href="mailto:rodriguezcliff19@gmail.com"
+            href="mailto:clirodriguez@csumb.edu"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="text-blue-300 hover:text-white transition-colors"
