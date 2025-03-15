@@ -36,6 +36,7 @@ export default function RootLayout({
               <p>© {new Date().getFullYear()} Clifford Rodriguez. All rights reserved.</p>
             </div>
           </footer>
+          <BackToTop />
         </ThemeProvider>
       </body>
     </html>
@@ -45,3 +46,4 @@ export default function RootLayout({
 
 
 import './globals.css'
+import { BackToTop } from "@/components/back-to-top"
