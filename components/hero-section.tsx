@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export function HeroSection() {
+
   return (
     <section className="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden navy-gradient">
       <motion.div
@@ -43,16 +44,14 @@ export function HeroSection() {
           </Button>
         </div>
         <div className="flex justify-center gap-6 mt-8">
-          <motion.a
-            href="https://github.com/CliffordR23"
-            target="_blank"
-            rel="noopener noreferrer"
+        <motion.a
+            href="mailto:clirodriguez@csumb.edu"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="text-blue-300 hover:text-white transition-colors"
           >
-            <Github size={24} />
-            <span className="sr-only">GitHub</span>
+            <Mail size={24} />
+            <span className="sr-only">Email</span>
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/clifford-rodriguez-8357b3214/"
@@ -66,14 +65,17 @@ export function HeroSection() {
             <span className="sr-only">LinkedIn</span>
           </motion.a>
           <motion.a
-            href="mailto:clirodriguez@csumb.edu"
+            href="https://github.com/CliffordR23"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="text-blue-300 hover:text-white transition-colors"
           >
-            <Mail size={24} />
-            <span className="sr-only">Email</span>
+            <Github size={24} />
+            <span className="sr-only">GitHub</span>
           </motion.a>
+          
         </div>
       </motion.div>
       <motion.div

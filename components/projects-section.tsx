@@ -3,10 +3,19 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Cog } from "lucide-react"
+import { Code, Cog, MonitorCog, MonitorDot, MonitorSmartphone } from "lucide-react"
 
 export function ProjectsSection() {
   const projects = [
+    {
+      title: "My Website",
+      technologies: ["Node.js", "Next.js", "Yarn", "Vercel"],
+
+      description: [
+        " website using Next.js, a React framework that enables server-side rendering and static site generation for better performance. The backend functionality is powered by Node.js, which handles API routes to process form submissions and dynamic content. Yarn is used as the package manager to efficiently handle dependencies and scripts.",
+      ],
+      icon: <MonitorSmartphone className="h-6 w-6 text-primary" />,
+    },
     {
       title: "Farm-Ng, Software Engineer",
       technologies: ["Python", "TailScale"],

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Phone } from 'lucide-react'
+import { Download, FileUser, Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export function ContactSection() {
   const contactInfo = [
@@ -24,6 +24,14 @@ export function ContactSection() {
       title: "GitHub",
       value: "github.com/Clifford",
       href: "https://github.com/CliffordR23",
+    },
+    {
+      icon: <FileUser className="h-5 w-5" />,
+      title: "Resume",
+      value: "Download my resume.pdf",
+      href: "#",
+      // href: "file:///Users/cliff/Desktop/Portfolio/Resumes/Resume.pdf",
+      // Download: "CliffordResume.pdf",
     },
   ]
 
