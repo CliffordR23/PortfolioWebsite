@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import Link from "next/link";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -14,6 +15,15 @@ export function HeroSection() {
         transition={{ duration: 0.8 }}
         className="z-10 max-w-4xl"
       >
+        <div className="mb-8 relative w-[200px] h-[200px] mx-auto">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Headshot-Photoroom-osWxXHeOYfnbqB1ThWZ6FHsb6cHx7s.png"
+            alt="Clifford Rodriguez headshot"
+            fill
+            className="rounded-full object-cover border-4 border-blue-300"
+            priority
+          />
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
           Clifford Rodriguez
         </h1>
