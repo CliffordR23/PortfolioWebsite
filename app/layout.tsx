@@ -1,16 +1,19 @@
 import type React from "react"
 import "@/app/globals.css"
+import './globals.css'
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navbar } from "@/components/navbar"
 import { SimpleCursor } from "@/components/cursor-effect"
+import { BackToTop } from "@/components/back-to-top"
+import { LogoImageAnimation } from "@/components/logo-animation"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Clifford Rodriguez | Portfolio",
   description:
-    "Personal portfolio website for Clifford Rodriguez",
+    "Personal portfolio website",
 }
 
 export default function RootLayout({
@@ -30,6 +33,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <LogoImageAnimation />
           <SimpleCursor />
           <Navbar />
           {children}
@@ -45,7 +49,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'
-import { BackToTop } from "@/components/back-to-top"
