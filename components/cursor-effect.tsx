@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useIsMobile } from "./ui/use-mobile"
 
 export function SimpleCursor() {
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 })
@@ -15,7 +16,9 @@ export function SimpleCursor() {
     return () => {
       window.removeEventListener("mousemove", updateMousePosition)
     }
-  }, [])
+  }, [useIsMobile])
+
+  if (useIsMobile()) return null
 
   return (
     <div
