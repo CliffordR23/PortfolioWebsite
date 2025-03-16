@@ -28,10 +28,10 @@ export function ContactSection() {
     {
       icon: <FileUser className="h-5 w-5" />,
       title: "Resume",
-      value: "Download my resume.pdf",
-      href: "#",
-      // href: "file:///Users/cliff/Desktop/Portfolio/Resumes/Resume.pdf",
-      // Download: "CliffordResume.pdf",
+      value: "Download my resume as a pdf",
+      // href: "#",
+      href: "/Resume.pdf",
+      download: true,
     },
   ]
 
@@ -69,6 +69,7 @@ export function ContactSection() {
                     href={contact.href}
                     target={contact.title === "LinkedIn" || contact.title === "GitHub" ? "_blank" : undefined}
                     rel={contact.title === "LinkedIn" || contact.title === "GitHub" ? "noopener noreferrer" : undefined}
+                    download={contact.download ? "Resume.pdf" : undefined}
                     className="block"
                   >
                     <div className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors">
