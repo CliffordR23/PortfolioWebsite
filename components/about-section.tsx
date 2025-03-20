@@ -8,7 +8,7 @@ export function AboutSection() {
   const skills = {
     Languages: ["Java", "Python", "C/C++", "SQL", "React", "JavaScript", "HTML/CSS"],
     Frameworks: ["Node.js", "JUnit", "Next.js", "Yarn", "Vercel"],
-    "Developer Tools": ["Git", "AWS", "VS Code", "PyCharm", "IntelliJ", "WireShark"],
+    "Developer Tools": ["Git", "AWS", "VS Code", "PyCharm", "IntelliJ", "WireShark", "VirtualBox", "FlareVM","RemNux", "Docker"],
     OS: ["MacOS", "Windows", "Linux (Kali, Ubuntu)"],
     "Office Tools": ["Excel", "PPT", "Project", "Word", "Drive", "Docs", "Sheets"],
   }

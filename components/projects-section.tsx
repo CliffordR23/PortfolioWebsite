@@ -3,10 +3,20 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Cog, MonitorCog, MonitorDot, MonitorSmartphone } from "lucide-react"
+import { Code, Cog, MonitorCog, MonitorDot, MonitorSmartphone, Worm } from "lucide-react"
+import { title } from "process"
+import { Description } from "@radix-ui/react-toast"
 
 export function ProjectsSection() {
   const projects = [
+    {
+      title: "Malware Analysis Sandbox",
+      technologies: ["Virtual Box", "FlareVM", "RemNux"],
+      description: [
+        "Developed a Malware Analysis Sandbox using VirtualBox, Windows 10 VM, and REMnux to detect and analyze malware in a controlled environment. Implemented automated behavioral analysis, static and dynamic inspection, and integrated tools for network monitoring, process analysis, and detailed threat reporting.",
+      ],
+      icon: <Worm className="h-6 w-6 text-primary" />
+    },
     {
       title: "My Website",
       technologies: ["Node.js", "Next.js", "Yarn", "Vercel"],
