@@ -25,12 +25,25 @@ export default function RootLayout({
     
     <html lang="en" suppressHydrationWarning>
       <head>
+      {/* Google tag (gtag.js) */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0JFWL12GN"></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H0JFWL12GN');
+      `,
+    }}
+  />
         <link rel="shortcut icon" href="/CR2.png" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
+      
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <LogoImageAnimation />
