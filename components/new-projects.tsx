@@ -11,7 +11,7 @@ export function ProjectsSectionAdvanced() {
     {
         title: "Networking and Routing Homelab",
         technologies: ["Cisco ASA", "Cisco Catalyst Switch", "Vlan", "Wireguard"],
-        period: "2025",
+        period: "Apr 2025 - Present",
         description: [
           "Fully functional homelab using enterprise-grade equipment to simulate real-world network environments.",
           "This homelab reflects my interest in infrastructure design, security, and hands-on administration of network devices. It's a self-directed project where I continually expand and test new configurations and ideas — simulating production environments in a controlled space.",
@@ -21,7 +21,7 @@ export function ProjectsSectionAdvanced() {
     {
         title: "Malware Analysis Sandbox",
         technologies: ["Virtual Box", "FlareVM", "RemNux"],
-        period: "2025",
+        period: "March 2025",
         description: [
           "Developed a Malware Analysis Sandbox using VirtualBox, Windows 10 VM, and REMnux to detect and analyze malware in a controlled environment. Implemented automated behavioral analysis, static and dynamic inspection, and integrated tools for network monitoring, process analysis, and detailed threat reporting.",
         ],
@@ -30,7 +30,7 @@ export function ProjectsSectionAdvanced() {
     {
         title: "My Portfolio Website",
         technologies: ["Next.js", "Node.js", "Tailwind CSS", "Framer Motion", "Yarn", "Vercel"],
-        period: "2025",
+        period: "Feb 2025 - Present",
         description: [
           "Designed and developed a personal portfolio website to showcase skills and projects.",
           "Implemented modern UI components, animations, and responsive design principles.",
