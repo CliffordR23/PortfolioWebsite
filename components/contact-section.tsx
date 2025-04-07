@@ -69,7 +69,7 @@ export function ContactSection() {
                     href={contact.href}
                     target={contact.title === "LinkedIn" || contact.title === "GitHub" ? "_blank" : undefined}
                     rel={contact.title === "LinkedIn" || contact.title === "GitHub" ? "noopener noreferrer" : undefined}
-                    download={contact.download ? "Resume.pdf" : undefined}
+                    download={contact.download ? "ResumeApr25 copy.pdf" : undefined}
                     className="block"
                   >
                     <div className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors">

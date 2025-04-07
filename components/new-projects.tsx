@@ -113,7 +113,7 @@ export function ProjectsSectionAdvanced() {
             autoPlay={true}
             interval={6000}
             showProgress={true}
-            effect="zoom" // Try "slide", "fade", or "zoom"
+            effect="zoom" //"slide", "fade", or "zoom"
           />
         </div>
       </div>
