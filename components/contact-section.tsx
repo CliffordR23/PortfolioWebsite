@@ -1,12 +1,17 @@
 "use client"
 
 import { useRef } from "react"
-import emailjs from "emailjs-com"
+import emailjs from "@emailjs/browser"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@/components/ui/card"
-import { FileUser, Github, Linkedin, Mail,} from "lucide-react"
-
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { FileUser, Github, Linkedin, Mail } from "lucide-react"
 
 export function ContactSection() {
   const form = useRef<HTMLFormElement>(null)
@@ -56,7 +61,7 @@ export function ContactSection() {
     {
       icon: <FileUser className="h-5 w-5" />,
       title: "Resume",
-      value: "Download my resume as a pdf",
+      value: "Download my resume as a PDF",
       href: "/Resume.pdf",
       download: true,
     },
@@ -85,6 +90,7 @@ export function ContactSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
+          {/* Contact Info */}
           <Card>
             <CardHeader>
               <CardTitle>Get in Touch</CardTitle>
@@ -99,29 +105,23 @@ export function ContactSection() {
                     key={index}
                     href={contact.href}
                     target={
-                      contact.title === "LinkedIn" ||
-                      contact.title === "GitHub"
+                      contact.title === "LinkedIn" || contact.title === "GitHub"
                         ? "_blank"
                         : undefined
                     }
                     rel={
-                      contact.title === "LinkedIn" ||
-                      contact.title === "GitHub"
+                      contact.title === "LinkedIn" || contact.title === "GitHub"
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    download={
-                      contact.download ? "ResumeApr25 copy.pdf" : undefined
-                    }
+                    download={contact.download ? "ResumeApr25 copy.pdf" : undefined}
                     className="block"
                   >
                     <div className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors">
                       <div className="mr-3 text-primary">{contact.icon}</div>
                       <div>
                         <p className="text-sm font-medium">{contact.title}</p>
-                        <p className="text-sm text-muted-foreground">
-                          {contact.value}
-                        </p>
+                        <p className="text-sm text-muted-foreground">{contact.value}</p>
                       </div>
                     </div>
                   </a>
@@ -130,6 +130,7 @@ export function ContactSection() {
             </CardContent>
           </Card>
 
+          {/* Contact Form */}
           <Card>
             <CardHeader>
               <CardTitle>Let's Connect</CardTitle>

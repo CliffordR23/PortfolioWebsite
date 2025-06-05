@@ -5,3 +5,5 @@ yarn.lock
 package.json
 
 .DS_Store
+.env.local
+.DS_Store
