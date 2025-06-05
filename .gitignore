@@ -1,9 +1,5 @@
 node_modules
 .next
 .DS_Store
-yarn.lock
-package.json
-
-.DS_Store
 .env.local
-.DS_Store
+
