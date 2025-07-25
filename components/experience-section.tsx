@@ -7,6 +7,18 @@ import { Briefcase } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
+      title: "Network and Systems Intern",
+      company: "Moonlight Packing Corporation",
+      location: "Reedley, CA",
+      period: "May 2025 – August 2025",
+      description: [
+        "Deploy and maintain Linux-based AI vision systems and hardware sensors for automated fruit detection and packaging.",
+        "Configure fiber and Ethernet networks, including switch setup, transceivers, and wireless Access Point installation.",
+        "Maintain and calibrate sensors used in automation workflows; assist in basic PLC setup and ladder logic testing.",
+        "Perform physical infrastructure tasks such as cable routing, termination, and equipment installation. Onboard desktops/laptops and create internal documentation for process consistency and knowledge sharing",
+      ],
+    },
+    {
       title: "Undergraduate Research Assistant",
       company: "CSU Monterey Bay",
       location: "Marina, CA",
