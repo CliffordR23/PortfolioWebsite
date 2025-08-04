@@ -7,7 +7,7 @@ import { Briefcase } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Network and Systems Intern",
+      title: "Assistant Network and Systems Engineer",
       company: "Moonlight Packing Corporation",
       location: "Reedley, CA",
       period: "May 2025 – August 2025",
