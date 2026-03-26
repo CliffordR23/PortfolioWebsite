@@ -7,7 +7,7 @@ import { Navbar } from "@/components/navbar"
 import { SimpleCursor } from "@/components/cursor-effect"
 import { BackToTop } from "@/components/back-to-top"
 import { LogoImageAnimation } from "@/components/logo-animation"
-
+import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
