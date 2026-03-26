@@ -5,14 +5,52 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 
 export function AboutSection() {
-  const skills = {
-    Languages: ["Java", "Python", "C/C++", "SQL", "React", "JavaScript", "HTML/CSS"],
-    Frameworks: ["Node.js", "JUnit", "Next.js", "Yarn", "Vercel"],
-    "Developer Tools": ["Git", "AWS", "VS Code", "PyCharm", "IntelliJ", "WireShark", "VirtualBox", "FlareVM","RemNux", "Docker"],
-    OS: ["MacOS", "Windows", "Linux (Kali, Ubuntu)"],
-    "Office Tools": ["Excel", "PPT", "Project", "Word", "Drive", "Docs", "Sheets"],
-  }
-
+const skills = {
+  Languages: [
+    "Python", 
+    "PowerShell", 
+    "Bash", 
+    "SQL", 
+    "Java", 
+    "C++", 
+    "Node.js"
+  ],
+  Networking: [
+    "TCP/IP", 
+    "IPv4/IPv6", 
+    "VLANs", 
+    "Routing & Switching", 
+    "Firewall Administration (Cisco ASA)", 
+    "VPNs (WireGuard, IPsec)", 
+    "Wireshark (Packet Analysis)"
+  ],
+  "Cloud & Platforms": [
+    "AWS (EC2)", 
+    "Vercel"
+  ],
+  "Infrastructure & Systems": [
+    "Active Directory", 
+    "Microsoft 365", 
+    "Docker", 
+    "VirtualBox"
+  ],
+  Security: [
+    "Network Hardening", 
+    "IDS/IPS Concepts", 
+    "ACLs", 
+    "FlareVM", 
+    "REMnux"
+  ],
+  "Developer Tools": [
+    "Git", 
+    "VS Code"
+  ],
+  OS: [
+    "Windows", 
+    "macOS", 
+    "Linux (Ubuntu, Kali)"
+  ]
+};
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -79,12 +117,10 @@ export function AboutSection() {
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
                 <p className="text-muted-foreground mb-4">
-                  I'm passionate about network security and software development, with experience in both research and
-                  practical applications.
+                  I’m passionate about network security and software development, with hands-on experience supporting and maintaining real-world network infrastructure, along with research and practical project work.
                 </p>
                 <p className="text-muted-foreground">
-                  My focus areas include full-stack development, network security, and robotics programming. I enjoy
-                  working on challenging projects that combine hardware and software solutions.
+                  My focus areas include network infrastructure, cybersecurity, and cloud technologies.
                 </p>
               </CardContent>
             </Card>

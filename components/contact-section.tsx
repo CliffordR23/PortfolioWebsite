@@ -62,7 +62,7 @@ export function ContactSection() {
       icon: <FileUser className="h-5 w-5" />,
       title: "Resume",
       value: "Download my resume as a PDF",
-      href: "/Resume.pdf",
+      href: "/NetworkFocusedResumeMar26copy.pdf",
       download: true,
     },
   ]
@@ -88,7 +88,7 @@ export function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 gap-6 max-w-md mx-auto"
         >
           {/* Contact Info */}
           <Card>
@@ -114,7 +114,7 @@ export function ContactSection() {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    download={contact.download ? "ResumeApr25 copy.pdf" : undefined}
+                    download={contact.download ? "NetworkFocusedResumeMar26copy.pdf" : undefined}
                     className="block"
                   >
                     <div className="flex items-center p-3 rounded-lg hover:bg-muted transition-colors">
@@ -131,7 +131,7 @@ export function ContactSection() {
           </Card>
 
           {/* Contact Form */}
-          <Card>
+          {/* <Card>
             <CardHeader>
               <CardTitle>Let's Connect</CardTitle>
               <CardDescription>
@@ -185,7 +185,7 @@ export function ContactSection() {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
         </motion.div>
       </div>
     </section>

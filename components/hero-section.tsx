@@ -29,7 +29,7 @@ export function HeroSection() {
           Clifford Rodriguez
         </h1>
         <h2 className="text-xl md:text-2xl text-blue-200 mb-8">
-          Computer Science Student with focus in Networks, Security, and Full Stack WebDev
+          Computer Science Student with a focus on network infrastructure, cybersecurity, and cloud technologies.
         </h2>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <Button asChild variant="outline" size="lg" className="border-blue-300 text-blue-300 hover:bg-blue-900/20">

@@ -8,57 +8,57 @@ import { AdvancedCarousel } from "@/components/ui/advanced-carousel"
 
 export function ProjectsSectionAdvanced() {
   const projects = [
-    {
-        title: "Networking and Routing Homelab",
-        technologies: ["Cisco ASA", "Cisco Catalyst Switch", "Vlan", "Wireguard"],
-        period: "Apr 2025 - Present",
-        description: [
-          "Fully functional homelab using enterprise-grade equipment to simulate real-world network environments.",
-          "This homelab reflects my interest in infrastructure design, security, and hands-on administration of network devices. It's a self-directed project where I continually expand and test new configurations and ideas — simulating production environments in a controlled space.",
-        ],
-        icon: <Router className="h-6 w-6 text-primary" />
-      },
-    {
-        title: "Malware Analysis Sandbox",
-        technologies: ["Virtual Box", "FlareVM", "RemNux"],
-        period: "March 2025",
-        description: [
-          "Developed a Malware Analysis Sandbox using VirtualBox, Windows 10 VM, and REMnux to detect and analyze malware in a controlled environment. Implemented automated behavioral analysis, static and dynamic inspection, and integrated tools for network monitoring, process analysis, and detailed threat reporting.",
-        ],
-        icon: <Worm className="h-6 w-6 text-primary" />
-      },
-    {
-        title: "My Portfolio Website",
-        technologies: ["Next.js", "Node.js", "Tailwind CSS", "Framer Motion", "Yarn", "Vercel"],
-        period: "Feb 2025 - Present",
-        description: [
-          "Designed and developed a personal portfolio website to showcase skills and projects.",
-          "Implemented modern UI components, animations, and responsive design principles.",
-          "Website using Next.js, a React framework that enables server-side rendering and static site generation for better performance. The backend functionality is powered by Node.js, which handles API routes to process form submissions and dynamic content. Yarn is used as the package manager to efficiently handle dependencies and scripts.",
-        ],
-        icon: <MonitorSmartphone className="h-6 w-6 text-primary" />,
-      },
-    {
-      title: "Farm-Ng, Software Engineer",
-      technologies: ["Python", "TailScale"],
-      period: "Aug 2024 - December 2024",
-      description: [
-        "Participated in a competitive project to build an Amiga robot capable of detecting and measuring artichoke sizes using the Farm-ng Amiga robot platform.",
-        "Coordinating with a team of 5 computer programmers to ensure efficient development of code and integration with the Farm-Ng's API",
-      ],
-      icon: <Code className="h-6 w-6 text-primary" />,
-    },
-    {
-      title: "Engineering technician – Good Year Blimp",
-      technologies: ["CAD", "3D printing", "Fabrication"],
-      period: "Aug 2021 – May 2022",
-      description: [
-        "Developed a small-scale model of a Goodyear blimp as part of a class project, designed to collect atmospheric data when launched with a balloon.",
-        "Contributed to design, CAD modeling, and assembly of the model for data collection.",
-      ],
-      icon: <Cog className="h-6 w-6 text-primary" />,
-    },
-  ]
+  {
+    title: "Networking and Routing Homelab",
+    technologies: ["Cisco ASA", "Cisco Catalyst Switch", "VLAN", "WireGuard"],
+    period: "Apr 2025 - Present",
+    description: [
+      "Designed and deployed a multi-network homelab using Cisco ASA and Catalyst switches, implementing VLAN segmentation, routing, and secure VPN access.",
+      "Simulate enterprise network environments to test firewall rules, traffic segmentation, and network security configurations."
+    ],
+    icon: <Router className="h-6 w-6 text-primary" />
+  },
+  {
+    title: "Malware Analysis Sandbox",
+    technologies: ["VirtualBox", "FlareVM", "REMnux"],
+    period: "March 2025",
+    description: [
+      "Developed a malware analysis sandbox using VirtualBox, Windows 10, and REMnux to safely analyze malicious software.",
+      "Implemented static and dynamic analysis techniques, integrating tools for network monitoring, process analysis, and threat reporting."
+    ],
+    icon: <Worm className="h-6 w-6 text-primary" />
+  },
+  {
+    title: "Security+ Practice Exam Web App",
+    technologies: ["HTML", "JavaScript", "JSON"],
+    period: "Feb 2026",
+    description: [
+      "Engineered a web application that converts practice exam content into a realistic CompTIA Security+ testing environment.",
+      "Implemented features such as timed exams, question flagging, randomized question sets, and an interface mirroring real certification exams."
+    ],
+    icon: <Code className="h-6 w-6 text-primary" />
+  },
+  {
+    title: "My Portfolio Website",
+    technologies: ["Next.js", "Node.js", "Yarn", "Vercel"],
+    period: "Feb 2025 - Present",
+    description: [
+      "Built a personal portfolio website using Next.js for optimized performance with server-side rendering and static site generation.",
+      "Developed backend functionality with Node.js for handling API routes and dynamic content."
+    ],
+    icon: <MonitorSmartphone className="h-6 w-6 text-primary" />
+  },
+  {
+    title: "Farm-Ng Software Engineer Project",
+    technologies: ["Python", "Tailscale"],
+    period: "Aug 2024 - December 2024",
+    description: [
+      "Collaborated on a team project to develop an Amiga robot capable of detecting and measuring artichoke sizes using the Farm-ng platform.",
+      "Worked with a team of engineers to integrate software with the Farm-ng API and ensure efficient system performance."
+    ],
+    icon: <Code className="h-6 w-6 text-primary" />
+  }
+];
 
   const projectCards = projects.map((project, index) => (
     <div key={index} className="h-full px-4 py-8">

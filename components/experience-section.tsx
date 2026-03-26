@@ -7,37 +7,53 @@ import { Briefcase } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Assistant Network and Systems Engineer",
-      company: "Moonlight Packing Corporation",
-      location: "Reedley, CA",
-      period: "May 2025 – August 2025",
+      title: "Technology Associate",
+      company: "York School",
+      location: "Monterey, CA",
+      period: "February 2026 – Present",
       description: [
-        "Deploy and maintain Linux-based AI vision systems and hardware sensors for automated fruit detection and packaging.",
-        "Configure fiber and Ethernet networks, including switch setup, transceivers, and wireless Access Point installation.",
-        "Maintain and calibrate sensors used in automation workflows; assist in basic PLC setup and ladder logic testing.",
-        "Perform physical infrastructure tasks such as cable routing, termination, and equipment installation. Onboard desktops/laptops and create internal documentation for process consistency and knowledge sharing",
-      ],
+        "Monitor and troubleshoot campus-wide network connectivity, improving system reliability and uptime.",
+        "Support configuration and maintenance of network infrastructure, including switches and wireless access points.",
+        "Provide technical support across hardware, software, and network systems for faculty, staff, and students.",
+        "Manage support tickets via Freshdesk, resolving high-volume requests with clear documentation and communication.",
+        "Deploy and maintain endpoint devices and classroom technology across campus environments.",
+        "Develop a Raspberry Pi–based digital signage system to automate and manage campus display content."
+      ]
     },
+    {
+        title: "Network and Systems Intern",
+        company: "Moonlight Companies",
+        location: "Reedley, CA",
+        period: "May 2025 – August 2025",
+        description: [
+          "Deploy and maintain Linux-based AI vision systems and hardware sensors for automated fruit detection and packaging.",
+          "Configure and deploy layer 2/3 network infrastructure, including switches, VLANs, and wireless access points.",
+          "Install and test fiber and Ethernet links, transceivers, and wireless infrastructure in production environments.",
+          "Maintain and calibrate sensors used in automation workflows and assist in basic PLC setup and ladder logic testing.",
+          "Perform physical infrastructure tasks such as cable routing, termination, and equipment installation.",
+          "Onboard desktops and laptops and create internal documentation for process consistency and knowledge sharing."
+        ]
+      },
     {
       title: "Undergraduate Research Assistant",
-      company: "CSU Monterey Bay",
-      location: "Marina, CA",
-      period: "Jan 2025 – Present",
+      company: "School of Computing Design; CSUMB",
+      location: "Seaside, CA",
+      period: "January 2025 – Present",
       description: [
-        "Developing a full-stack web application to showcase the work done in the 3+ research projects.",
-        "Using Node.js, Next.js, and Yarn for full-stack development.",
-      ],
+        "Develop a full-stack web application to showcase work across multiple research projects.",
+        "Enhance a genetic algorithm to handle complex scheduling problems and improve system efficiency."
+      ]
     },
     {
-      title: "Network Security Team, Secretary",
-      company: "CSU Monterey Bay",
-      location: "Marina, CA",
-      period: "Jan 2025 – Present",
+      title: "Network Security Team — Secretary",
+      company: "School of Computing Design; CSUMB",
+      location: "Seaside, CA",
+      period: "January 2025 – Present",
       description: [
-        "Creating a weekly newsletter to get more students involved in cybersecurity and computer science.",
-        "Take notes on meeting plans, current and upcoming",
-      ],
-    },
+        "Create a weekly newsletter to increase student engagement in cybersecurity and computer science topics.",
+        "Document meeting plans and lead discussions on information security concepts and best practices."
+      ]
+    }
   ]
 
   return (
